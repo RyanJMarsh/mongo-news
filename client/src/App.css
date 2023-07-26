@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  background-color: aqua;
+}
+
+.header {
+  color: blue;
+}
