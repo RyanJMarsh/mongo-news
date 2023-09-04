@@ -147,4 +147,4 @@ mongoose
 
 // Listening
 
-app.listen(process.env.POT || 5000);
+app.listen(process.env.PORT || 5000);
