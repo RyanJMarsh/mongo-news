@@ -1,7 +1,7 @@
 {
   "main.css": "/mongo-news/static/css/main.8ee8e477.chunk.css",
-  "main.js": "/mongo-news/static/js/main.045904f9.chunk.js",
-  "main.js.map": "/mongo-news/static/js/main.045904f9.chunk.js.map",
+  "main.js": "/mongo-news/static/js/main.b3a3e1fc.chunk.js",
+  "main.js.map": "/mongo-news/static/js/main.b3a3e1fc.chunk.js.map",
   "static/js/1.3e3c3eb5.chunk.js": "/mongo-news/static/js/1.3e3c3eb5.chunk.js",
   "static/js/1.3e3c3eb5.chunk.js.map": "/mongo-news/static/js/1.3e3c3eb5.chunk.js.map",
   "static/js/2.4b17f991.chunk.js": "/mongo-news/static/js/2.4b17f991.chunk.js",
@@ -10,6 +10,6 @@
   "runtime~main.js.map": "/mongo-news/static/js/runtime~main.5a61c516.js.map",
   "static/css/main.8ee8e477.chunk.css.map": "/mongo-news/static/css/main.8ee8e477.chunk.css.map",
   "index.html": "/mongo-news/index.html",
-  "precache-manifest.6e1f9f405999fb744ff54258afdb0536.js": "/mongo-news/precache-manifest.6e1f9f405999fb744ff54258afdb0536.js",
+  "precache-manifest.6d7e809594a1ea6d4cbbd047bf5c6a12.js": "/mongo-news/precache-manifest.6d7e809594a1ea6d4cbbd047bf5c6a12.js",
   "service-worker.js": "/mongo-news/service-worker.js"
 }

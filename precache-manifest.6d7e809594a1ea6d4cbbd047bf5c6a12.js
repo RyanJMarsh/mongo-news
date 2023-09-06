@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "045904f9552d22984115",
+    "revision": "b3a3e1fc486e7cbddfc3",
     "url": "/mongo-news/static/css/main.8ee8e477.chunk.css"
   },
   {
-    "revision": "045904f9552d22984115",
-    "url": "/mongo-news/static/js/main.045904f9.chunk.js"
+    "revision": "b3a3e1fc486e7cbddfc3",
+    "url": "/mongo-news/static/js/main.b3a3e1fc.chunk.js"
   },
   {
     "revision": "3e3c3eb55c09e01a1300",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/mongo-news/static/js/runtime~main.5a61c516.js"
   },
   {
-    "revision": "257477042fbfdcec261aa2a6fcb4cabf",
+    "revision": "67268ee035466dbde4216c6015fbfd5b",
     "url": "/mongo-news/index.html"
   }
 ];
