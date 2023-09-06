@@ -7,7 +7,7 @@ function ArticlePage({ id, setArticlePage, setTopic}) {
 
   const getArticleData = async (id) => {
     try {
-      const response = await fetch(`/article/${id}`)
+      const response = await fetch(`https://mongo-news-7d6c075743aa.herokuapp.com/article/${id}`)
       const json = await response.json()
       setArticle(json)
       setLoading(false)
@@ -19,7 +19,7 @@ function ArticlePage({ id, setArticlePage, setTopic}) {
 
   const upVote = async (id) => {
     try {
-      const response = await fetch(`/article/${id}/upvote`, {
+      const response = await fetch(`https://mongo-news-7d6c075743aa.herokuapp.com/article/${id}/upvote`, {
         method: "PATCH"
       })
       getArticleData(id);
@@ -31,7 +31,7 @@ function ArticlePage({ id, setArticlePage, setTopic}) {
 
   const downVote = async (id) => {
     try {
-      const response = await fetch(`/article/${id}/downvote`, {
+      const response = await fetch(`https://mongo-news-7d6c075743aa.herokuapp.com/article/${id}/downvote`, {
         method: "PATCH"
       })
       getArticleData(id);
@@ -44,7 +44,7 @@ function ArticlePage({ id, setArticlePage, setTopic}) {
   const postComment = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`/article/${id}/comments`, {
+      const response = await fetch(`https://mongo-news-7d6c075743aa.herokuapp.com/article/${id}/comments`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"
@@ -63,7 +63,7 @@ function ArticlePage({ id, setArticlePage, setTopic}) {
 
   const deleteComment = async (commentId) => {
     try {
-      const response = await fetch(`/article/${id}/removecomment`, {
+      const response = await fetch(`https://mongo-news-7d6c075743aa.herokuapp.com/article/${id}/removecomment`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"

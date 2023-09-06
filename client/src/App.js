@@ -13,7 +13,7 @@ function App() {
 
   const getData = async (topic) => {
     try {
-      const response = await fetch(`/news/${topic}`);
+      const response = await fetch(`https://mongo-news-7d6c075743aa.herokuapp.com/news/${topic}`);
       const json = await response.json();
       setArticles(json);
       setLoading(false)
