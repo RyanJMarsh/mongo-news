@@ -11,7 +11,7 @@ app.use(express.json());
 // Routes
 
 //Get All Articles
-app.get("/news/:topic", async (req, res) => {
+app.get("https://mongo-news-7d6c075743aa.herokuapp.com/news/:topic", async (req, res) => {
   try {
     let query
     if (req.params.topic == "all"){
@@ -28,7 +28,7 @@ app.get("/news/:topic", async (req, res) => {
 
 // Get Article by ID
 
-app.get("/article/:articleId", async (req, res) => {
+app.get("https://mongo-news-7d6c075743aa.herokuapp.com/article/:articleId", async (req, res) => {
   try {
     const article = await Article.findById(req.params.articleId);
     res.json(article);
@@ -39,7 +39,7 @@ app.get("/article/:articleId", async (req, res) => {
 
 // Get Articles by author
 
-app.get("/:author", async (req, res) => {
+app.get("https://mongo-news-7d6c075743aa.herokuapp.com/:author", async (req, res) => {
   try {
     const articlesByAuthor = await Article.find({
       author: String(req.params.author),
@@ -51,7 +51,7 @@ app.get("/:author", async (req, res) => {
 });
 // Add Article to DB
 
-app.post("/news", async (req, res) => {
+app.post("https://mongo-news-7d6c075743aa.herokuapp.com/news", async (req, res) => {
   const article = new Article({
     title: req.body.title,
     author: req.body.author,
@@ -70,7 +70,7 @@ app.post("/news", async (req, res) => {
 
 // Patch Article to increase votes
 
-app.patch("/article/:articleId/upvote", async (req, res) => {
+app.patch("https://mongo-news-7d6c075743aa.herokuapp.com/article/:articleId/upvote", async (req, res) => {
   try {
     const updatedArticle = await Article.updateOne(
       { _id: req.params.articleId },
@@ -88,7 +88,7 @@ app.patch("/article/:articleId/upvote", async (req, res) => {
 
 // Patch Article to decrease votes
 
-app.patch("/article/:articleId/downvote", async (req, res) => {
+app.patch("https://mongo-news-7d6c075743aa.herokuapp.com/article/:articleId/downvote", async (req, res) => {
   try {
     const updatedArticle = await Article.updateOne(
       { _id: req.params.articleId },
@@ -106,7 +106,7 @@ app.patch("/article/:articleId/downvote", async (req, res) => {
 
 // Patch Article to add comments
 
-app.patch("/article/:articleId/comments", async (req, res) => {
+app.patch("https://mongo-news-7d6c075743aa.herokuapp.com/article/:articleId/comments", async (req, res) => {
   try {
     const updatedArticle = await Article.updateOne(
       { _id: req.params.articleId },
@@ -124,7 +124,7 @@ app.patch("/article/:articleId/comments", async (req, res) => {
 
 // Patch Article to remove comments
 
-app.patch("/article/:articleId/removecomment", async (req, res) => {
+app.patch("https://mongo-news-7d6c075743aa.herokuapp.com/article/:articleId/removecomment", async (req, res) => {
     try {
       const updatedArticle = await Article.updateOne(
         { _id: req.params.articleId },
