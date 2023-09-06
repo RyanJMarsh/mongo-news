@@ -1,8 +1,8 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://ryanjmarsh.github.io/mongo-news",
   "proxy": "https://mongo-news-7d6c075743aa.herokuapp.com/",
+  "homepage": "https://ryanjmarsh.github.io/mongo-news",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
